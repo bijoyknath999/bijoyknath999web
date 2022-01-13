@@ -32,5 +32,14 @@
     <div class="container">
       <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
     </div> 
+    <script>
+    const queryString = window.location.search;
+
+const urlParams = new URLSearchParams(queryString);
+
+const page_type = urlParams.get('test')
+
+console.log(page_type);
+    </script>
   </body>
 </html>
