@@ -22,7 +22,7 @@
   border: none;
 }
     </style>
-    <title>Root Streaming</title>
+    <title id="name">Root Streaming</title>
 
    <link rel="stylesheet" href="style.css">
 
@@ -37,8 +37,11 @@
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
       const id = urlParams.get('id')
+      const name = urlParams.get('name')
       console.log(id);
       document.getElementById("ID").src = "https://drive.google.com/file/d/"+id+"/preview";
+      document.getElementById("name").title = ""+name;
+
     </script>
   </body>
 </html>
