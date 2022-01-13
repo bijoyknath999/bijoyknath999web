@@ -30,16 +30,15 @@
 
   <body>
     <div class="container">
-      <iframe class="responsive-iframe" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+      <iframe id="ID" class="responsive-iframe" src=""></iframe>
     </div> 
     <script>
-    const queryString = window.location.search;
-
-const urlParams = new URLSearchParams(queryString);
-
-const page_type = urlParams.get('test')
-
-console.log(page_type);
+      
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const id = urlParams.get('id')
+      console.log(id);
+      document.getElementById("ID").src = "https://www.youtube.com/embed/"+id;
     </script>
   </body>
 </html>
