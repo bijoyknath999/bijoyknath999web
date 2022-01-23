@@ -30,9 +30,11 @@
 
   <body>
     <div class="container">
+      
       <iframe id="ID" class="responsive-iframe" src="" allow="autoplay"></iframe>
     </div> 
     <script>
+      
       
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
@@ -43,6 +45,11 @@
       document.getElementById("ID").src = "https://drive.google.com/file/d/"+id+"/preview";
       document.getElementById("name").text = ""+name;
       
+      const myVideo = document.getElementById('ID');
+const myButton = document.querySelector('button');
+myButton.addEventListener('click', function() {
+    myVideo.play();
+});
 
       var picture = document.querySelector(".video-stream html5-main-video").src;
             console.log(picture);
