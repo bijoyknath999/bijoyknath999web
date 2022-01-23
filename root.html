@@ -43,8 +43,9 @@
       document.getElementById("ID").src = "https://drive.google.com/file/d/"+id+"/preview?autoplay=1";
       document.getElementById("name").text = ""+name;
       
+      var src = document.querySelector('.responsive-iframe > iframe').src;
+
       var picture = document.getElementsByClassName("responsive-iframe");
-var src = picture[0].children[0].src;
             console.log(src);
 
     </script>
